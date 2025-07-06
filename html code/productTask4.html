@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing | Portfolio</title>
+  <link rel="stylesheet" href="portfolio-style.css" />
+</head>
+<body>
+  <nav>
+    <a href="portfolio-home.html">Home</a>
+    <a href="portfolio-about.html">About</a>
+    <a href="portfolio-projects.html">Projects</a>
+    <a href="todoTask4.html">To‑Do App</a>
+    <a href="productTask4.html" class="active">Product Listing</a>
+    <a href="portfolio-contact.html">Contact</a>
+  </nav>
+
+  <section class="section">
+    <h2>Product Listing</h2>
+    <p>This page displays products and allows filtering and sorting by price or rating.</p>
+
+    <div class="filters">
+      <select id="sort-select">
+        <option value="">Sort by...</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="rating-desc">Rating: High → Low</option>
+      </select>
+      <input type="text" id="search-input" placeholder="Search products..." />
+    </div>
+
+    <ul id="product-list" class="product-list"></ul>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="productTask4.js"></script>
+</body>
+</html>
